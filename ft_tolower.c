@@ -6,27 +6,25 @@
 /*   By: pdrettas <pdrettas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 14:42:38 by pdrettas          #+#    #+#             */
-/*   Updated: 2024/10/12 14:43:08 by pdrettas         ###   ########.fr       */
+/*   Updated: 2024/10/14 19:50:31 by pdrettas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_tolower(int x);
-
-int ft_tolower(int x)
+int	ft_tolower(int x)
 {
-    if (x >= 'A' && x <= 'Z')
-    {
-        return (x + 32);
-    }
-    return x;
+	if (x >= 'A' && x <= 'Z')
+	{
+		return (x + 32);
+	}
+	return (x);
 }
 
-int main ()
-{
-    char x;
-    x = 'B';
+// int main ()
+// {
+//     char x;
+//     x = 'B';
 
-    printf("%c\n", ft_tolower(x));
-}
+//     printf("%c\n", ft_tolower(x));
+// }
