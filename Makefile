@@ -6,41 +6,36 @@
 #    By: pdrettas <pdrettas@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/12 22:20:14 by pdrettas          #+#    #+#              #
-#    Updated: 2024/10/14 20:07:21 by pdrettas         ###   ########.fr        #
+#    Updated: 2024/10/16 11:27:29 by pdrettas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Variables
-NAME = libft.a                  # Name of the static library
-CC = gcc                        # Compiler
-CFLAGS = -Wall -Wextra -Werror  # Compilation flags (warnings, extra checks, treat warnings as errors)
-SRCS = ft_strchr.c ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
-       ft_isdigit.c ft_isprint.c ft_memcpy.c ft_memmove.c ft_memset.c \
-       ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_tolower.c ft_toupper.c  # Source files
-OBJS = $(SRCS:.c=.o)            # Object files, corresponding to source files
-RM = rm -f                      # Command to remove files
+CC = gcc
+CFLAGS = -Wall -Werror -Wextra
+SRC = $(wildcard *.c)
+OBJ = $(SRC:.c=.o)
+NAME = libft.a
+HEADER = libft.h
 
-# Default rule, builds the static library
+# Rules
 all: $(NAME)
 
-# Create the static library from object files
-$(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+$(NAME): $(OBJ)
+		ar rcs $(NAME) $(OBJ)
 
-# Compile .c files into .o object files
-%.o: %.c
+%.o: %.c $(HEADER)
 	$(CC) $(CFLAGS) -c $< -o $@
 
-# Clean object files
 clean:
-	$(RM) $(OBJS)
+		rm -f $(OBJ)
 
-# Clean object files and the static library
 fclean: clean
-	$(RM) $(NAME)
+		rm -f $(NAME)
 
-# Rebuild everything from scratch
 re: fclean all
 
-# Phony targets
-.PHONY: all clean fclean re
+
+
+# edit wildcard -> put all files
+# francinette didnt work bc of SRC when listing all the files. (works with wildcard)

@@ -6,7 +6,7 @@
 /*   By: pdrettas <pdrettas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 14:41:47 by pdrettas          #+#    #+#             */
-/*   Updated: 2024/10/14 19:50:01 by pdrettas         ###   ########.fr       */
+/*   Updated: 2024/10/16 22:37:01 by pdrettas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_isalpha(int x)
 //     char test3 = '1';  // Should return 0 (false)
 //     char test4 = '#';  // Should return 0 (false)
 //     char test5 = 'm';  // Should return 1 (true)
-//     // Test ft_isalpha function
+
 //     printf("Test with '%c': %d\n", test1, ft_isalpha(test1));  // Expect 1
 //     printf("Test with '%c': %d\n", test2, ft_isalpha(test2));  // Expect 1
 //     printf("Test with '%c': %d\n", test3, ft_isalpha(test3));  // Expect 0

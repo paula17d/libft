@@ -6,7 +6,7 @@
 /*   By: pdrettas <pdrettas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 19:20:48 by pdrettas          #+#    #+#             */
-/*   Updated: 2024/10/14 20:33:53 by pdrettas         ###   ########.fr       */
+/*   Updated: 2024/10/16 10:34:28 by pdrettas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ size_t	ft_strlen(const char *str)
 
 //     const char *str2 = "";
 //     printf("Length of empty string: %zu\n", ft_strlen(str2));
-
 
 //     const char *str3 = "This is a test string.";
 //     printf("Length of '%s': %zu\n", str3, ft_strlen(str3));
