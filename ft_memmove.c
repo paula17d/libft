@@ -6,7 +6,7 @@
 /*   By: pdrettas <pdrettas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 23:02:23 by pdrettas          #+#    #+#             */
-/*   Updated: 2024/10/14 19:50:16 by pdrettas         ###   ########.fr       */
+/*   Updated: 2024/10/19 20:06:56 by pdrettas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,5 +68,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 //     return 0;
 // }
-
-// edit

@@ -1,29 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pdrettas <pdrettas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/14 11:35:56 by pdrettas          #+#    #+#             */
-/*   Updated: 2024/10/17 12:37:41 by pdrettas         ###   ########.fr       */
+/*   Created: 2024/10/18 19:38:54 by pdrettas          #+#    #+#             */
+/*   Updated: 2024/10/19 20:05:46 by pdrettas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	int	i;
 
 	i = 0;
-	while (s[i] != '\0')
+	if (str[i] == NULL)
+		return ("");
+
+	if (start > len)
+		return ("");
+
+	while (str[i] != '\0')
 	{
-		if (s[i] == (char)c)
-			return ((char *)&s[i]);
+		len
 		i++;
 	}
-	if ((char)c == '\0')
-		return ((char *)&s[i]);
-	return (NULL);
+	
 }
+
+
+// not done yet
