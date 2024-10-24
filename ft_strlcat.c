@@ -6,7 +6,7 @@
 /*   By: pdrettas <pdrettas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 19:37:11 by pdrettas          #+#    #+#             */
-/*   Updated: 2024/10/14 19:50:22 by pdrettas         ###   ########.fr       */
+/*   Updated: 2024/10/24 21:05:17 by pdrettas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,17 +41,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	return (dst_len + src_len);
 }
 
-// int main(void)
-// {
-//     char dst[20] = "Hello";
-//     const char *src = " World";
-//     size_t dstsize = 20;
-//     size_t result;
-
-//     result = ft_strlcat(dst, src, dstsize);
-
-//     printf("Final string: '%s'\n", dst);
-//     printf("Total length: %zu\n", result);
-
-//     return 0;
-// }

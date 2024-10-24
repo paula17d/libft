@@ -6,7 +6,7 @@
 /*   By: pdrettas <pdrettas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 14:43:55 by pdrettas          #+#    #+#             */
-/*   Updated: 2024/10/14 19:50:25 by pdrettas         ###   ########.fr       */
+/*   Updated: 2024/10/24 21:05:14 by pdrettas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,16 +35,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	dst[i] = '\0';
 	return (src_length);
 }
-// int main()
-// {
-// 	const char src[] = "Hello, World!";
-// 	char dest[6];  
-
-// 	size_t result = ft_strlcpy(dest, src, sizeof(dest));
-
-// 	printf("Source: %s\n", src);
-// 	printf("Destination: %s\n", dest);  
-// 	printf("Length of source string: %zu\n", result);
-
-// 	return 0;
-// }

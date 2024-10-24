@@ -6,7 +6,7 @@
 /*   By: pdrettas <pdrettas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:18:30 by pdrettas          #+#    #+#             */
-/*   Updated: 2024/10/14 19:49:52 by pdrettas         ###   ########.fr       */
+/*   Updated: 2024/10/24 21:07:02 by pdrettas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,12 +37,3 @@ int	ft_atoi(char *str)
 	}
 	return (result * sign);
 }
-
-// int main()
-// {
-//     char str1[] = "   -1234";
-//     char str2[] = "42";
-//     printf("%d\n", ft_atoi(str1));  // Output: -1234
-//     printf("%d\n", ft_atoi(str2));  // Output: 42
-//     return 0;
-// }

@@ -6,7 +6,7 @@
 /*   By: pdrettas <pdrettas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 14:42:38 by pdrettas          #+#    #+#             */
-/*   Updated: 2024/10/14 19:50:31 by pdrettas         ###   ########.fr       */
+/*   Updated: 2024/10/24 21:04:50 by pdrettas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,3 @@ int	ft_tolower(int x)
 	}
 	return (x);
 }
-
-// int main ()
-// {
-//     char x;
-//     x = 'B';
-
-//     printf("%c\n", ft_tolower(x));
-// }
