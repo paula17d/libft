@@ -6,19 +6,24 @@
 #    By: pdrettas <pdrettas@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/12 22:20:14 by pdrettas          #+#    #+#              #
-#    Updated: 2024/10/26 11:49:37 by pdrettas         ###   ########.fr        #
+#    Updated: 2024/10/28 15:39:14 by pdrettas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# Variables
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
-SRC = $(wildcard *.c)
+SRC = ft_strdup.c ft_calloc.c ft_atoi.c ft_isalpha.c ft_isdigit.c \
+ft_isprint.c ft_strlcat.c ft_strlen.c ft_strncmp.c ft_tolower.c \
+ft_toupper.c ft_isalnum.c ft_isascii.c ft_memset.c ft_bzero.c \
+ft_memcpy.c ft_memmove.c ft_strlcpy.c ft_strchr.c ft_putstr_fd.c \
+ft_strrchr.c ft_memchr.c ft_memcmp.c ft_strnstr.c ft_putnbr_fd.c \
+ft_substr.c ft_strjoin.c ft_strtrim.c ft_putchar_fd.c ft_putendl_fd.c \
+ft_itoa.c ft_striteri.c ft_split.c ft_strmapi.c
+
 OBJ = $(SRC:.c=.o)
 NAME = libft.a
 HEADER = libft.h
 
-# Rules
 all: $(NAME)
 
 $(NAME): $(OBJ)
@@ -35,7 +40,4 @@ fclean: clean
 
 re: fclean all
 
-
-# phony rein
-# edit wildcard -> put all files
-# francinette didnt work bc of SRC when listing all the files. (works with wildcard)
+.PHONY: all clean fclean re
