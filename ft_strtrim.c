@@ -6,7 +6,7 @@
 /*   By: pdrettas <pdrettas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 13:55:27 by pdrettas          #+#    #+#             */
-/*   Updated: 2024/10/27 23:38:25 by pdrettas         ###   ########.fr       */
+/*   Updated: 2024/10/28 16:50:41 by pdrettas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ static int	ending_point(const char *s, const char *set)
 {
 	int	end;
 
-	end = strlen(s) - 1;
+	end = ft_strlen(s) - 1;
 	while (end >= 0 && exists_in_set(s[end], set))
 	{
 		end--;

@@ -6,11 +6,11 @@
 #    By: pdrettas <pdrettas@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/12 22:20:14 by pdrettas          #+#    #+#              #
-#    Updated: 2024/10/28 15:39:14 by pdrettas         ###   ########.fr        #
+#    Updated: 2024/10/28 17:01:26 by pdrettas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Werror -Wextra
 SRC = ft_strdup.c ft_calloc.c ft_atoi.c ft_isalpha.c ft_isdigit.c \
 ft_isprint.c ft_strlcat.c ft_strlen.c ft_strncmp.c ft_tolower.c \

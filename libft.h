@@ -6,16 +6,13 @@
 /*   By: pdrettas <pdrettas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 17:27:11 by pdrettas          #+#    #+#             */
-/*   Updated: 2024/10/28 01:14:59 by pdrettas         ###   ########.fr       */
+/*   Updated: 2024/10/28 17:11:35 by pdrettas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stddef.h>
-# include <stdio.h>
-# include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
 
@@ -27,7 +24,7 @@ int		ft_isprint(int x);
 size_t	ft_strlen(const char *str);
 int		ft_toupper(int x);
 int		ft_tolower(int x);
-int		ft_atoi(char *str);
+int		ft_atoi(const char *str);
 void	*ft_memset(void *ptr, int value, size_t num);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
