@@ -6,7 +6,7 @@
 /*   By: pdrettas <pdrettas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 11:30:48 by pdrettas          #+#    #+#             */
-/*   Updated: 2024/10/22 21:06:52 by pdrettas         ###   ########.fr       */
+/*   Updated: 2024/10/28 01:55:24 by pdrettas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	int	i;
 
 	i = 0;
-
 	while (s[i] != '\0')
 	{
 		(*f)(i, &s[i]);

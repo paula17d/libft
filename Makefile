@@ -6,7 +6,7 @@
 #    By: pdrettas <pdrettas@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/12 22:20:14 by pdrettas          #+#    #+#              #
-#    Updated: 2024/10/16 11:27:29 by pdrettas         ###   ########.fr        #
+#    Updated: 2024/10/26 11:49:37 by pdrettas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,6 +36,6 @@ fclean: clean
 re: fclean all
 
 
-
+# phony rein
 # edit wildcard -> put all files
 # francinette didnt work bc of SRC when listing all the files. (works with wildcard)

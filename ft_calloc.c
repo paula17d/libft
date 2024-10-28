@@ -6,7 +6,7 @@
 /*   By: pdrettas <pdrettas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 23:56:23 by pdrettas          #+#    #+#             */
-/*   Updated: 2024/10/22 21:03:48 by pdrettas         ###   ########.fr       */
+/*   Updated: 2024/10/28 01:13:42 by pdrettas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,9 @@ void	*ft_calloc(size_t count, size_t size)
 	int		*ptr;
 
 	total_memory = count * size;
-	ptr = malloc(total_memory + 1);
+	ptr = malloc(total_memory);
 	if (ptr == NULL)
 		return (NULL);
-	ptr[total_memory + 1] = 0;
-
-	return ((void *) ptr);
+	ft_memset(ptr, 0, total_memory);
+	return (ptr);
 }

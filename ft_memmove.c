@@ -6,7 +6,7 @@
 /*   By: pdrettas <pdrettas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 23:02:23 by pdrettas          #+#    #+#             */
-/*   Updated: 2024/10/24 21:07:42 by pdrettas         ###   ########.fr       */
+/*   Updated: 2024/10/28 01:53:08 by pdrettas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,21 +23,19 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	s = (unsigned char *)src;
 	if (n == 0 || dest == src)
 		return (dest);
-	if (src < dest)
+	if (s < d)
 	{
 		i = n;
-		while (i > 0)
+		while (i--)
+			d[i] = s[i];
+	}
+	else
+	{
+		while (i < n)
 		{
 			d[i] = s[i];
-			i--;
+			i++;
 		}
-		return (dest);
-	}
-	while (i < n)
-	{
-		d[i] = s[i];
-		i++;
 	}
 	return (dest);
 }
-

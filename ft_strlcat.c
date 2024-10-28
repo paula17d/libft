@@ -6,7 +6,7 @@
 /*   By: pdrettas <pdrettas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 19:37:11 by pdrettas          #+#    #+#             */
-/*   Updated: 2024/10/24 21:05:17 by pdrettas         ###   ########.fr       */
+/*   Updated: 2024/10/28 01:55:45 by pdrettas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,9 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	src_len = 0;
 	dst_len = 0;
 	while (dst[dst_len] != '\0' && dst_len < dstsize)
-	{
 		dst_len++;
-	}
 	while (src[src_len] != '\0')
-	{
 		src_len++;
-	}
 	if (dst_len >= dstsize)
 	{
 		return (dstsize + src_len);
@@ -38,6 +34,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		dst[dst_len + i] = src[i];
 		i++;
 	}
+	dst[dst_len + i] = '\0';
 	return (dst_len + src_len);
 }
-
